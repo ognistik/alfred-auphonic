@@ -5,9 +5,9 @@
     <img width="300" src="Workflow/assets/auphonic.png">
   </a>
 </p>
-<p align="center"><em><a href="https://youtu.be/2TWJGcTVy3A">~ How I use Auphonic (Video) ~</a></em></p>
+<p align="center"><em><a href="https://youtu.be/n1EBrndi-jg">~ How I use Auphonic (Video) ~</a></em></p>
 
-Alfred workflow for seamlessly processing audio files through Auphonic's API. [Auphonic](https://auphonic.com?source=robper) is a professional audio post-production service that provides automated audio processing and optimization, including leveling, noise reduction, and encoding.
+Alfred workflow for seamlessly processing audio files through Auphonic's API. [Auphonic](https://auphonic.com?source=robper) is a professional audio post-production service that provides AI-powered audio processing, including leveling, compressing, noise reduction, and encoding.
 
 **This workflow streamlines the uploading/downloading of audio files for them to be processed using up to four of your Auphonic presets.**
 
@@ -35,7 +35,7 @@ The workflow keeps you updated in two ways:
 - Option (⌥): Uses preset 2
 - Control (⌃): Uses preset 3
 
-**Quick Tip:** If the Alfred search bar shows that no files are being processed, press CMD to open the last saved Auphonic URL. This helps when there's an error or server issue. You can always access your productions directly on Auphonic's website as well.
+**Quick Tip:** If the Alfred search bar shows that no files are being processed, press CMD and click to open the last saved Auphonic URL. This helps when there's an error or server issue. You can always access your productions directly on Auphonic's website as well.
 
 ---
 ## SUPPORTED FILE TYPES

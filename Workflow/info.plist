@@ -26,8 +26,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>BC5769B3-BCA1-48F0-8B6B-355A0E7F2CE8</string>
-				<key>disabled</key>
-				<true/>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1646,8 +1644,8 @@ printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_ind
 				<integer>0</integer>
 				<key>script</key>
 				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist='https://raw.githubusercontent.com/ognistik/alfred-pasteflow/main/Workflow/info.plist'
-readonly workflow_url='https://raw.githubusercontent.com/ognistik/alfred-pasteflow/main/PasteFlow.alfredworkflow'
+readonly remote_info_plist='https://raw.githubusercontent.com/ognistik/alfred-auphonic/main/Workflow/info.plist'
+readonly workflow_url='https://raw.githubusercontent.com/ognistik/alfred-auphonic/main/Auphonic.alfredworkflow'
 readonly download_type='direct'
 readonly frequency_check='4'
 
@@ -1991,7 +1989,7 @@ rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
 	<string># AUPHONIC FOR ALFRED
 ![](assets/auphonic-s.png)
 
-[~ Visit on Github~ ](https://github.com/ognistik/alfred-auphonic) | [~ How I use Auphonic (Video) ~](https://youtu.be/2TWJGcTVy3A) | [~Buy me a Coffe~](https://buymeacoffee.com/afadingthought)
+[~ Visit on Github~ ](https://github.com/ognistik/alfred-auphonic) | [~ How I use Auphonic (Video) ~](https://youtu.be/n1EBrndi-jg) | [~Buy me a Coffe~](https://buymeacoffee.com/afadingthought)
 
 Alfred workflow for seamlessly processing audio files through Auphonic's API. [Auphonic](https://auphonic.com?source=robper) is a professional audio post-production service that provides automated audio processing and optimization, including leveling, noise reduction, and encoding.
 
@@ -2317,7 +2315,7 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<key>note</key>
 			<string>OneUpdater</string>
 			<key>xpos</key>
-			<real>805</real>
+			<real>810</real>
 			<key>ypos</key>
 			<real>390</real>
 		</dict>
@@ -2648,9 +2646,11 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<string>presetC</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/ognistik/alfred-auphonic</string>
 </dict>
 </plist>
