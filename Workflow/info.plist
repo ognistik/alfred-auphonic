@@ -1,0 +1,2656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.auphonic.aft</string>
+	<key>connections</key>
+	<dict>
+		<key>09A7FC99-67D6-49F0-96B5-3307EFAC914A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D1E113A-E4B3-4DB9-A24E-433FBCFA3BE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0B00BFCE-CCF6-4B2F-BAC2-60F56B405EB2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BC5769B3-BCA1-48F0-8B6B-355A0E7F2CE8</string>
+				<key>disabled</key>
+				<true/>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>117A9E87-0271-4491-AD78-7EF984245BA7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DA138D5B-89ED-44ED-97A2-61A739DB6C4E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>186EA88E-8591-4694-8564-F1C8BA462138</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FA7F233-27BB-420A-AE95-135EC6E5472E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>306D6574-5645-44F6-8B74-1B83BE2A5D85</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Use Alt. Preset 1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>99D31041-11CB-460E-8D78-ACD8019EBA45</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Use Alt. Preset 2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AA89CCF7-C55A-4049-BF67-3D85BE12A195</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Use Alt. Preset 3</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>19B68C1F-F0F9-4A11-9607-5EEBE10B23E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9FD21CA8-E3CC-43B6-A8FB-47DF92131CE5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1EE677C6-02AD-4A23-8706-8FC1A7627EEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F26291EC-EDC0-4210-BCDD-F962289FE005</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E3B60529-47B7-413D-9C96-AECFE401225E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1FA7F233-27BB-420A-AE95-135EC6E5472E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>843542AE-5972-4D4F-9AFD-BFB3AE5D73B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0B00BFCE-CCF6-4B2F-BAC2-60F56B405EB2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2B89096E-BCEE-4312-9EFE-1EEEFDE1B45B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CB8C0CB7-211A-4F4D-9EC6-3ACBD4A7750B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>306D6574-5645-44F6-8B74-1B83BE2A5D85</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FA7F233-27BB-420A-AE95-135EC6E5472E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3D75EF77-78AC-4642-A439-FB88312D0A06</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>90F78E88-C7EA-4C3B-9F8C-DC652076CE29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4F8A763B-AE9E-42EA-BDA1-12ABE75AAF67</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>821117D1-769E-4AF3-95D2-63C9D9C566FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5064531A-9184-4776-A021-6FCE49536376</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C2B7FEE-C2C5-4DCD-A585-1EAB533051C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5343FA2D-99A6-4BBA-8DDF-71207807D70A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3D75EF77-78AC-4642-A439-FB88312D0A06</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>67F668D6-8AA4-4721-AED5-38859AEB6D0F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>547A9897-8FA5-41A0-80F3-233540D8B572</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C9957F6-6ECA-487C-9F2F-BB38054B9595</key>
+		<array/>
+		<key>843542AE-5972-4D4F-9AFD-BFB3AE5D73B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2B89096E-BCEE-4312-9EFE-1EEEFDE1B45B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5064531A-9184-4776-A021-6FCE49536376</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>90F78E88-C7EA-4C3B-9F8C-DC652076CE29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D182E8D5-742C-423A-A75D-D538AF04C337</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>91EF4B1F-FE02-435E-9734-9479B0A252BE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>91EF4B1F-FE02-435E-9734-9479B0A252BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FC33A6B7-75CC-440E-86A7-A4387BBA0113</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9445FACC-312E-4C3D-8179-57369D4EFF90</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B00558CA-982F-4D11-9F57-3840070D05DE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>965F58DB-8D80-44C0-808C-012095ADE712</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDB9B915-D3C1-4992-9F23-C28B79A377EB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>99D31041-11CB-460E-8D78-ACD8019EBA45</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FA7F233-27BB-420A-AE95-135EC6E5472E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9C2B7FEE-C2C5-4DCD-A585-1EAB533051C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>09A7FC99-67D6-49F0-96B5-3307EFAC914A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>30012F18-DBC1-47BF-AD40-1D16CF162F1D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>117A9E87-0271-4491-AD78-7EF984245BA7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>30012F18-DBC1-47BF-AD40-1D16CF162F1D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>965F58DB-8D80-44C0-808C-012095ADE712</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9FD21CA8-E3CC-43B6-A8FB-47DF92131CE5</key>
+		<array/>
+		<key>A22784A5-E8B6-43D8-91E6-4726B11169A4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>67F668D6-8AA4-4721-AED5-38859AEB6D0F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AA89CCF7-C55A-4049-BF67-3D85BE12A195</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FA7F233-27BB-420A-AE95-135EC6E5472E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B00558CA-982F-4D11-9F57-3840070D05DE</key>
+		<array/>
+		<key>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D5F3F5E-8B6F-4776-81B2-8067E33EDC70</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F8A763B-AE9E-42EA-BDA1-12ABE75AAF67</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CF00DDAF-2D15-41D4-A90C-27E658066B6C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D0D3C14E-E70D-497A-96BB-A48884E21277</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C9957F6-6ECA-487C-9F2F-BB38054B9595</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DA138D5B-89ED-44ED-97A2-61A739DB6C4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F12AF2A9-1DEE-4E21-9702-8FFF8E8EFAED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E42EEF8-2A40-4F64-9072-51D365C12171</string>
+				<key>disabled</key>
+				<true/>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E3B60529-47B7-413D-9C96-AECFE401225E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FC9FB21-24F8-46B4-A1CE-BAC617B4F20B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EDB9B915-D3C1-4992-9F23-C28B79A377EB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>355B9EDF-AE1B-4BF3-AC76-DCCF3F332649</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F12AF2A9-1DEE-4E21-9702-8FFF8E8EFAED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9445FACC-312E-4C3D-8179-57369D4EFF90</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF00DDAF-2D15-41D4-A90C-27E658066B6C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1EE677C6-02AD-4A23-8706-8FC1A7627EEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B84C4243-DCCD-4B58-8487-EFC11C4C2F79</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5343FA2D-99A6-4BBA-8DDF-71207807D70A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D0D3C14E-E70D-497A-96BB-A48884E21277</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F26291EC-EDC0-4210-BCDD-F962289FE005</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FC9FB21-24F8-46B4-A1CE-BAC617B4F20B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>19B68C1F-F0F9-4A11-9607-5EEBE10B23E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F81DCAD1-5B26-4102-B450-1D6D5072D1B2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>67F668D6-8AA4-4721-AED5-38859AEB6D0F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Robert J. P. Oberg</string>
+	<key>description</key>
+	<string>Process Audio Files Using Auphonic</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Auphonic</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -f "$alfred_workflow_cache/totalItems.txt"
+rm -f "$alfred_workflow_cache/code.txt"
+rm -f "$alfred_workflow_cache/status.txt"
+rm -f "$alfred_workflow_cache/title.txt"
+rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4D5F3F5E-8B6F-4776-81B2-8067E33EDC70</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Downloading "{var:title}"</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B00558CA-982F-4D11-9F57-3840070D05DE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Upload complete. Will proceed to check status.</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2D1E113A-E4B3-4DB9-A24E-433FBCFA3BE3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>File(s) received. Will proceed to upload.</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>CB8C0CB7-211A-4F4D-9EC6-3ACBD4A7750B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -f "$alfred_workflow_cache/totalItems.txt"
+rm -f "$alfred_workflow_cache/code.txt"
+rm -f "$alfred_workflow_cache/status.txt"
+rm -f "$alfred_workflow_cache/title.txt"
+rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D182E8D5-742C-423A-A75D-D538AF04C337</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>9445FACC-312E-4C3D-8179-57369D4EFF90</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>09A7FC99-67D6-49F0-96B5-3307EFAC914A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>2B89096E-BCEE-4312-9EFE-1EEEFDE1B45B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>wait</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>821117D1-769E-4AF3-95D2-63C9D9C566FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+username="${username}"
+password="${password}"
+download_folder="$HOME/Downloads"
+
+# Get the array and current index
+uuids_string="${uuids}"
+current_index="${current_index}"
+
+# Split the string into array using read
+read -r -a uuids_array &lt;&lt;&lt; "${uuids_string}"
+
+# Get current UUID being processed
+uuid="${uuids_array[$current_index]}"
+
+# Get file info and download
+status_response=$(curl -s https://auphonic.com/api/production/${uuid}.json -u $username:$password)
+fileName=$(echo "$status_response" | grep -o '"title": "[^"]*"' | cut -d'"' -f4)
+
+# URL encode the filename
+encoded_name=$(printf "%s" "$fileName" | perl -MURI::Escape -ne 'print uri_escape($_)')
+
+# Add counter to filename if it already exists
+base_filename="${fileName}"
+counter=1
+while [ -f "$download_folder/${fileName}.${extension}" ]; do
+    fileName="${base_filename}_${counter}"
+    ((counter++))
+done
+
+# Download the file
+download_url="https://auphonic.com/api/download/audio-result/${uuid}/${encoded_name}.${extension}"
+curl -s -o "$download_folder/${fileName}.${extension}" $download_url -u $username:$password
+
+# Increment index and check if there are more files to process
+next_index=$((current_index + 1))
+should_continue="false"
+if [ $next_index -lt ${#uuids_array[@]} ]; then
+    should_continue="true"
+fi
+
+# Output variables for next iteration
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "%s", "should_continue": "%s"}}}' "$uuids_string" "$next_index" "$should_continue"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF00DDAF-2D15-41D4-A90C-27E658066B6C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Show uploading status on Script Filter for a moment
+rm -f "$alfred_workflow_cache/status.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4F8A763B-AE9E-42EA-BDA1-12ABE75AAF67</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+username="${username}"
+password="${password}"
+
+# Get the array and current index
+uuids_string="${uuids}"
+current_index="${current_index}"
+
+# Split the string into array using read
+read -r -a uuids_array &lt;&lt;&lt; "${uuids_string}"
+
+# Get current UUID being processed
+uuid="${uuids_array[$current_index]}"
+
+# Get status for current UUID
+status_response=$(curl -s https://auphonic.com/api/production/$uuid.json -u $username:$password)
+
+# Extract values using grep and cut
+code=$(echo "$status_response" | grep -o '"status": [0-9]*' | head -1 | cut -d' ' -f2)
+status=$(echo "$status_response" | grep -o '"status_string": "[^"]*"' | cut -d'"' -f4)
+url=$(echo "$status_response" | grep -o '"status_page": "[^"]*"' | cut -d'"' -f4)
+title=$(echo "$status_response" | grep -o '"title": "[^"]*"' | cut -d'"' -f4)
+
+echo -n "$code" &gt; "$alfred_workflow_cache/code.txt"
+echo -n "$status" &gt; "$alfred_workflow_cache/status.txt"
+echo -n "$url" &gt; "$alfred_workflow_cache/url.txt"
+echo -n "$title" &gt; "$alfred_workflow_cache/title.txt"
+echo -n "$current_index" &gt; "$alfred_workflow_cache/currentIndex.txt"
+
+printf '{"alfredworkflow": {"arg": "", "variables": {"code": "%s", "status": "%s", "url": "%s", "title": "%s", "uuids": "%s", "current_index": "%s"}}}' "$code" "$status" "$url" "$title" "$uuids_string" "$current_index"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DA138D5B-89ED-44ED-97A2-61A739DB6C4E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:code}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>3</string>
+						<key>outputlabel</key>
+						<string>Done</string>
+						<key>uid</key>
+						<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:code}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^(0|1|4|5|6|7|8|10|14)$</string>
+						<key>outputlabel</key>
+						<string>Waiting</string>
+						<key>uid</key>
+						<string>B84C4243-DCCD-4B58-8487-EFC11C4C2F79</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>F12AF2A9-1DEE-4E21-9702-8FFF8E8EFAED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:should_continue}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string>loop</string>
+						<key>uid</key>
+						<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Clean Files</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Initialize empty strings for UUIDs and filenames
+uuids=""
+
+[ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
+echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
+
+# Process each file passed as argument
+for file in "${filePaths}"; do
+    theTitle=$(basename "${file%.*}")
+    username="${username}"
+    password="${password}" 
+    preset="${preset}"
+
+    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
+        -u $username:$password \
+        -F "preset=$preset" \
+        -F "title=$theTitle" \
+        -F "input_file=@$file" \
+        -F "action=start")
+
+    # Extract UUID using grep and cut instead of jq
+    uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
+    
+	if [ ! -z "$uuid" ]; then
+    		uuids+=("$uuid")
+    		current_files+=("$theTitle")
+	fi
+done
+
+# Join arrays with space as delimiter
+uuids_string="${uuids[*]}"
+files_string="${current_files[*]}"
+
+# Output the variables
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "0", "allFiles": "%s"}}}' "$uuids_string" "$files_string"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5064531A-9184-4776-A021-6FCE49536376</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.m4a-audio</string>
+					<string>com.microsoft.waveform-audio</string>
+					<string>com.newkline.avrx.m4a</string>
+					<string>com.newkline.avrx.wav</string>
+					<string>io.iina.mpeg4-audio</string>
+					<string>io.iina.wav</string>
+					<string>public.aiff-audio</string>
+					<string>public.mp3</string>
+					<string>public.wav</string>
+				</array>
+				<key>name</key>
+				<string>Process with Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>186EA88E-8591-4694-8564-F1C8BA462138</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>E3B60529-47B7-413D-9C96-AECFE401225E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>wait</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>3FC9FB21-24F8-46B4-A1CE-BAC617B4F20B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>5</string>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>wait</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>117A9E87-0271-4491-AD78-7EF984245BA7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+printf '{"alfredworkflow": {"arg": "", "variables": {"savedStatus": "%s"}}}' "$code"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F26291EC-EDC0-4210-BCDD-F962289FE005</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>wait</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>FC33A6B7-75CC-440E-86A7-A4387BBA0113</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Show uploading status on Script Filter for a moment
+rm -f "$alfred_workflow_cache/status.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>91EF4B1F-FE02-435E-9734-9479B0A252BE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:uuids}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Continue</string>
+						<key>uid</key>
+						<string>30012F18-DBC1-47BF-AD40-1D16CF162F1D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>9C2B7FEE-C2C5-4DCD-A585-1EAB533051C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:savedStatus}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>{var:code}</string>
+						<key>outputlabel</key>
+						<string>loopQuiet</string>
+						<key>uid</key>
+						<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>1EE677C6-02AD-4A23-8706-8FC1A7627EEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1FA7F233-27BB-420A-AE95-135EC6E5472E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:url}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5343FA2D-99A6-4BBA-8DDF-71207807D70A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Get the array and current index
+uuids_string="${uuids}"
+current_index="${current_index}"
+
+# Split the string into array using read
+read -r -a uuids_array &lt;&lt;&lt; "${uuids_string}"
+
+# Increment index and check if there are more files to process
+next_index=$((current_index + 1))
+should_continue="false"
+if [ $next_index -lt ${#uuids_array[@]} ]; then
+    should_continue="true"
+fi
+
+# Output variables for next iteration
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "%s", "should_continue": "%s"}}}' "$uuids_string" "$next_index" "$should_continue"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3D75EF77-78AC-4642-A439-FB88312D0A06</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filePaths</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>843542AE-5972-4D4F-9AFD-BFB3AE5D73B3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:should_continue}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string>loop</string>
+						<key>uid</key>
+						<string>26047D19-6DD3-443F-BEA0-DEEBB29B726C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Clean Files</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>90F78E88-C7EA-4C3B-9F8C-DC652076CE29</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>preset</key>
+					<string>{var:presetA}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>306D6574-5645-44F6-8B74-1B83BE2A5D85</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Status: {var:status} | Code: {var:code} | Saved: {var:savedStatus}</string>
+				<key>title</key>
+				<string>Auphonic - Debugging</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9E42EEF8-2A40-4F64-9072-51D365C12171</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>preset</key>
+					<string>{var:presetB}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>99D31041-11CB-460E-8D78-ACD8019EBA45</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Status: {var:status} | File: {var:title} | Code: {var:code}</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7C9957F6-6ECA-487C-9F2F-BB38054B9595</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Status: {var:status} | File: {var:title} | Code: {var:code}</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9FD21CA8-E3CC-43B6-A8FB-47DF92131CE5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D0D3C14E-E70D-497A-96BB-A48884E21277</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>19B68C1F-F0F9-4A11-9607-5EEBE10B23E0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist='https://raw.githubusercontent.com/ognistik/alfred-pasteflow/main/Workflow/info.plist'
+readonly workflow_url='https://raw.githubusercontent.com/ognistik/alfred-pasteflow/main/PasteFlow.alfredworkflow'
+readonly download_type='direct'
+readonly frequency_check='4'
+
+
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type f -name 'notificator')"
+
+  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
+    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  # Remote sanity check
+  if ! url_exists "${remote_info_plist}"; then
+    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
+  fi
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+  rm "${tmp_file}"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  readonly download_url="$(
+    if [[ "${download_type}" == 'github_release' ]]; then
+      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
+    else
+      echo "${workflow_url}"
+    fi
+  )"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    readonly download_name="$(basename "${download_url}")"
+    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
+    open "${HOME}/Downloads/${download_name}"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BC5769B3-BCA1-48F0-8B6B-355A0E7F2CE8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>preset</key>
+					<string>{var:presetC}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>AA89CCF7-C55A-4049-BF67-3D85BE12A195</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dna}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>CheckUpdate</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>0B00BFCE-CCF6-4B2F-BAC2-60F56B405EB2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>There's been an error and it's not possible to upload.</string>
+				<key>title</key>
+				<string>Auphonic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>355B9EDF-AE1B-4BF3-AC76-DCCF3F332649</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -f "$alfred_workflow_cache/totalItems.txt"
+rm -f "$alfred_workflow_cache/code.txt"
+rm -f "$alfred_workflow_cache/status.txt"
+rm -f "$alfred_workflow_cache/title.txt"
+rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>965F58DB-8D80-44C0-808C-012095ADE712</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>{var:theKw}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait...</string>
+				<key>script</key>
+				<string>/usr/bin/osascript scripts/scriptFilter.js $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Process Audio Files Using Auphonic</string>
+				<key>title</key>
+				<string>Auphonic for Alfred</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>67F668D6-8AA4-4721-AED5-38859AEB6D0F</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>547A9897-8FA5-41A0-80F3-233540D8B572</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:dnd}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notify</string>
+						<key>uid</key>
+						<string>1F5F9EEF-1022-4A98-87DB-C497F8551399</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>EDB9B915-D3C1-4992-9F23-C28B79A377EB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A22784A5-E8B6-43D8-91E6-4726B11169A4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>au</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F81DCAD1-5B26-4102-B450-1D6D5072D1B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># AUPHONIC FOR ALFRED
+![](assets/auphonic-s.png)
+
+[~ Visit on Github~ ](https://github.com/ognistik/alfred-auphonic) | [~ How I use Auphonic (Video) ~](https://youtu.be/2TWJGcTVy3A) | [~Buy me a Coffe~](https://buymeacoffee.com/afadingthought)
+
+Alfred workflow for seamlessly processing audio files through Auphonic's API. [Auphonic](https://auphonic.com?source=robper) is a professional audio post-production service that provides automated audio processing and optimization, including leveling, noise reduction, and encoding.
+
+**This workflow streamlines the uploading/downloading of audio files for them to be processed using up to four of your Auphonic presets.**
+
+---
+## FEATURES
+
+- Process single or multiple audio files
+- Real-time notifications of processing status
+- Automatic download of processed files to Downloads folder
+- Error handling with automatic redirect to Auphonic production page
+
+---
+## HOW TO
+
+1. Select one or more files in Finder and open Alfred's actions window
+2. Search for "Process with Auphonic" to process your files
+
+The workflow keeps you updated in two ways:
+- System notifications showing processing status
+- Status updates in Alfred's search bar using your custom keyword
+
+**Using Different Presets:**
+- No modifier: Uses default preset
+- Command (⌘): Uses preset 1
+- Option (⌥): Uses preset 2
+- Control (⌃): Uses preset 3
+
+**Quick Tip:** If the Alfred search bar shows that no files are being processed, press CMD to open the last saved Auphonic URL. This helps when there's an error or server issue. You can always access your productions directly on Auphonic's website as well.
+
+---
+## SUPPORTED FILE TYPES
+**Currently, the following file types are supported for upload:**
+- MP4
+- MP3
+- WAV
+- AIFF
+
+**The following file types are supported for auto-download**
+- MP3
+- WAV
+- M4A
+- MP4
+
+Please make sure that your chosen preset includes the file type that you intend to download. If you need a different file type not listed here, let me know, and I'll be happy to add it—if possible.
+
+---
+*DISCLAIMER. Just a note letting you know that links in this README to Auphonic's site are affiliate ones, earning me a small commission if you ever decide to purchase processing credits through them, at no extra cost to you. I only recommend products I've personally vetted and believe are truly exceptional. Thanks for your support!*</string>
+	<key>uidata</key>
+	<dict>
+		<key>09A7FC99-67D6-49F0-96B5-3307EFAC914A</key>
+		<dict>
+			<key>xpos</key>
+			<real>1055</real>
+			<key>ypos</key>
+			<real>95</real>
+		</dict>
+		<key>0B00BFCE-CCF6-4B2F-BAC2-60F56B405EB2</key>
+		<dict>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
+		<key>117A9E87-0271-4491-AD78-7EF984245BA7</key>
+		<dict>
+			<key>note</key>
+			<string>Wait</string>
+			<key>xpos</key>
+			<real>1045</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>186EA88E-8591-4694-8564-F1C8BA462138</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>215</real>
+		</dict>
+		<key>19B68C1F-F0F9-4A11-9607-5EEBE10B23E0</key>
+		<dict>
+			<key>xpos</key>
+			<real>2225</real>
+			<key>ypos</key>
+			<real>390</real>
+		</dict>
+		<key>1EE677C6-02AD-4A23-8706-8FC1A7627EEF</key>
+		<dict>
+			<key>note</key>
+			<string>Only notify on status change</string>
+			<key>xpos</key>
+			<real>1930</real>
+			<key>ypos</key>
+			<real>235</real>
+		</dict>
+		<key>1FA7F233-27BB-420A-AE95-135EC6E5472E</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>2B89096E-BCEE-4312-9EFE-1EEEFDE1B45B</key>
+		<dict>
+			<key>xpos</key>
+			<real>755</real>
+			<key>ypos</key>
+			<real>105</real>
+		</dict>
+		<key>2D1E113A-E4B3-4DB9-A24E-433FBCFA3BE3</key>
+		<dict>
+			<key>note</key>
+			<string>Notify of Upload</string>
+			<key>xpos</key>
+			<real>1105</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
+		<key>306D6574-5645-44F6-8B74-1B83BE2A5D85</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>280</real>
+		</dict>
+		<key>355B9EDF-AE1B-4BF3-AC76-DCCF3F332649</key>
+		<dict>
+			<key>note</key>
+			<string>Notify of Error</string>
+			<key>xpos</key>
+			<real>1470</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>3D75EF77-78AC-4642-A439-FB88312D0A06</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>2590</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>3FC9FB21-24F8-46B4-A1CE-BAC617B4F20B</key>
+		<dict>
+			<key>note</key>
+			<string>Loop to check status</string>
+			<key>xpos</key>
+			<real>2310</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>4D5F3F5E-8B6F-4776-81B2-8067E33EDC70</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Clean Temp Files</string>
+			<key>xpos</key>
+			<real>1725</real>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>4F8A763B-AE9E-42EA-BDA1-12ABE75AAF67</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Change Status</string>
+			<key>xpos</key>
+			<real>1725</real>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>5064531A-9184-4776-A021-6FCE49536376</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Upload</string>
+			<key>xpos</key>
+			<real>805</real>
+			<key>ypos</key>
+			<real>215</real>
+		</dict>
+		<key>5343FA2D-99A6-4BBA-8DDF-71207807D70A</key>
+		<dict>
+			<key>xpos</key>
+			<real>2450</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>547A9897-8FA5-41A0-80F3-233540D8B572</key>
+		<dict>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>67F668D6-8AA4-4721-AED5-38859AEB6D0F</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>7C9957F6-6ECA-487C-9F2F-BB38054B9595</key>
+		<dict>
+			<key>xpos</key>
+			<real>1470</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>821117D1-769E-4AF3-95D2-63C9D9C566FE</key>
+		<dict>
+			<key>xpos</key>
+			<real>1910</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>843542AE-5972-4D4F-9AFD-BFB3AE5D73B3</key>
+		<dict>
+			<key>xpos</key>
+			<real>720</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>90F78E88-C7EA-4C3B-9F8C-DC652076CE29</key>
+		<dict>
+			<key>xpos</key>
+			<real>2730</real>
+			<key>ypos</key>
+			<real>265</real>
+		</dict>
+		<key>91EF4B1F-FE02-435E-9734-9479B0A252BE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Change Status</string>
+			<key>xpos</key>
+			<real>2855</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>9445FACC-312E-4C3D-8179-57369D4EFF90</key>
+		<dict>
+			<key>xpos</key>
+			<real>1390</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>965F58DB-8D80-44C0-808C-012095ADE712</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Clean Temp Files</string>
+			<key>xpos</key>
+			<real>1105</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>99D31041-11CB-460E-8D78-ACD8019EBA45</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>9C2B7FEE-C2C5-4DCD-A585-1EAB533051C6</key>
+		<dict>
+			<key>xpos</key>
+			<real>935</real>
+			<key>ypos</key>
+			<real>235</real>
+		</dict>
+		<key>9E42EEF8-2A40-4F64-9072-51D365C12171</key>
+		<dict>
+			<key>xpos</key>
+			<real>1260</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>9FD21CA8-E3CC-43B6-A8FB-47DF92131CE5</key>
+		<dict>
+			<key>note</key>
+			<string>Notify of status change</string>
+			<key>xpos</key>
+			<real>2310</real>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+		<key>A22784A5-E8B6-43D8-91E6-4726B11169A4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>Check Status Hotkey</string>
+			<key>xpos</key>
+			<real>85</real>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>AA89CCF7-C55A-4049-BF67-3D85BE12A195</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
+		<key>B00558CA-982F-4D11-9F57-3840070D05DE</key>
+		<dict>
+			<key>xpos</key>
+			<real>1470</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>BC5769B3-BCA1-48F0-8B6B-355A0E7F2CE8</key>
+		<dict>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<real>805</real>
+			<key>ypos</key>
+			<real>390</real>
+		</dict>
+		<key>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1600</real>
+			<key>ypos</key>
+			<real>205</real>
+		</dict>
+		<key>CB8C0CB7-211A-4F4D-9EC6-3ACBD4A7750B</key>
+		<dict>
+			<key>note</key>
+			<string>Notify of Upload</string>
+			<key>xpos</key>
+			<real>805</real>
+			<key>ypos</key>
+			<real>75</real>
+		</dict>
+		<key>CF00DDAF-2D15-41D4-A90C-27E658066B6C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Download and Update Index | Sets loop or not</string>
+			<key>xpos</key>
+			<real>1470</real>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>D0D3C14E-E70D-497A-96BB-A48884E21277</key>
+		<dict>
+			<key>xpos</key>
+			<real>1390</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>D182E8D5-742C-423A-A75D-D538AF04C337</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Clean Temp Files</string>
+			<key>xpos</key>
+			<real>2855</real>
+			<key>ypos</key>
+			<real>85</real>
+		</dict>
+		<key>DA138D5B-89ED-44ED-97A2-61A739DB6C4E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Check Status</string>
+			<key>xpos</key>
+			<real>1105</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>E3B60529-47B7-413D-9C96-AECFE401225E</key>
+		<dict>
+			<key>xpos</key>
+			<real>2225</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>EDB9B915-D3C1-4992-9F23-C28B79A377EB</key>
+		<dict>
+			<key>xpos</key>
+			<real>1260</real>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>F12AF2A9-1DEE-4E21-9702-8FFF8E8EFAED</key>
+		<dict>
+			<key>note</key>
+			<string>Conditions</string>
+			<key>xpos</key>
+			<real>1261</real>
+			<key>ypos</key>
+			<real>205</real>
+		</dict>
+		<key>F26291EC-EDC0-4210-BCDD-F962289FE005</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Set variable to check status change</string>
+			<key>xpos</key>
+			<real>2035</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>F81DCAD1-5B26-4102-B450-1D6D5072D1B2</key>
+		<dict>
+			<key>xpos</key>
+			<real>75</real>
+			<key>ypos</key>
+			<real>640</real>
+		</dict>
+		<key>FC33A6B7-75CC-440E-86A7-A4387BBA0113</key>
+		<dict>
+			<key>xpos</key>
+			<real>3000</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>au</string>
+				<key>placeholder</key>
+				<string>au</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>This keyword will only serve to check the status of upload/processing.</string>
+			<key>label</key>
+			<string>Workflow Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>theKw</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Auphonic Username</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>username</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Auphonic Password</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>password</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Default Preset ID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>preset</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>wav</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>WAV</string>
+						<string>wav</string>
+					</array>
+					<array>
+						<string>MP3</string>
+						<string>mp3</string>
+					</array>
+					<array>
+						<string>M4A</string>
+						<string>m4a</string>
+					</array>
+					<array>
+						<string>MP4</string>
+						<string>mp4</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Make sure your chosen preset includes this file type.</string>
+			<key>label</key>
+			<string>Auto Download</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>extension</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>No Notifications</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string></string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>dnd</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Do not Auto-Update</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string></string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>dna</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Alt. Preset 1 - ID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>presetA</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Alt. Preset 2 - ID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>presetB</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Alt. Preset 3 - ID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>presetC</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
