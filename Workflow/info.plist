@@ -661,6 +661,151 @@ rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Initialize empty strings for UUIDs and filenames
+uuids=""
+
+[ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
+echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
+
+# Process each file passed as argument
+for file in "${filePaths}"; do
+    theTitle=$(basename "${file%.*}")
+    username="${username}"
+    password="${password}" 
+    preset="${preset}"
+
+    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
+        -u $username:$password \
+        -F "preset=$preset" \
+        -F "title=$theTitle" \
+        -F "input_file=@$file" \
+        -F "action=start")
+
+    # Extract UUID using grep and cut instead of jq
+    uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
+    
+	if [ ! -z "$uuid" ]; then
+    		uuids+=("$uuid")
+    		current_files+=("$theTitle")
+	fi
+done
+
+# Join arrays with space as delimiter
+uuids_string="${uuids[*]}"
+files_string="${current_files[*]}"
+
+# Output the variables
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "0", "allFiles": "%s"}}}' "$uuids_string" "$files_string"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BFFBAE8C-CE95-4610-9234-E89D4AA56E31</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Create debug log file
+debug_log="$HOME/Desktop/auphonic_debug.txt"
+echo "=== Auphonic Debug Log $(date) ===" &gt; "$debug_log"
+
+# Initialize empty arrays for UUIDs and filenames
+uuids=()
+current_files=()
+
+[ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
+echo "Number of files: ${#filePaths[@]}" &gt;&gt; "$debug_log"
+echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
+
+# Process each file passed as argument
+for file in "${filePaths[@]}"; do
+    echo "Processing file: $file" &gt;&gt; "$debug_log"
+    
+    theTitle=$(basename "${file%.*}")
+    echo "Title: $theTitle" &gt;&gt; "$debug_log"
+    
+    username="${username}"
+    password="${password}" 
+    preset="${preset}"
+    
+    echo "Sending request to Auphonic API..." &gt;&gt; "$debug_log"
+    
+    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
+        -u $username:$password \
+        -F "preset=$preset" \
+        -F "title=$theTitle" \
+        -F "input_file=@$file" \
+        -F "action=start")
+    
+    echo "Response received: ${response:0:100}..." &gt;&gt; "$debug_log"
+
+    # Extract UUID using grep and cut instead of jq
+    uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
+    echo "Extracted UUID: $uuid" &gt;&gt; "$debug_log"
+    
+    if [ ! -z "$uuid" ]; then
+        uuids+=("$uuid")
+        current_files+=("$theTitle")
+        echo "Added UUID and filename to arrays" &gt;&gt; "$debug_log"
+    else
+        echo "WARNING: Failed to extract UUID" &gt;&gt; "$debug_log"
+    fi
+done
+
+# Debug array contents
+echo "uuids array: ${uuids[@]}" &gt;&gt; "$debug_log"
+echo "current_files array: ${current_files[@]}" &gt;&gt; "$debug_log"
+
+# Join arrays with space as delimiter
+uuids_string="${uuids[*]}"
+files_string="${current_files[*]}"
+
+echo "uuids_string: $uuids_string" &gt;&gt; "$debug_log"
+echo "files_string: $files_string" &gt;&gt; "$debug_log"
+
+# Output the variables
+output=$(printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "0", "allFiles": "%s"}}}' "$uuids_string" "$files_string")
+echo "Final output: $output" &gt;&gt; "$debug_log"
+echo "$output"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5D4E235C-3EBB-4888-911B-66B23254F2B3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -902,9 +1047,27 @@ while [ -f "$download_folder/${fileName}.${extension}" ]; do
     ((counter++))
 done
 
-# Download the file
+# Modified download section with error handling and resume capability
 download_url="https://auphonic.com/api/download/audio-result/${uuid}/${encoded_name}.${extension}"
-curl -s -o "$download_folder/${fileName}.${extension}" $download_url -u $username:$password
+
+# Use -L to follow redirects, -C - to resume downloads, and --retry for connection issues
+curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
+     -o "$download_folder/${fileName}.${extension}" \
+     -u $username:$password \
+     $download_url
+
+# Verify file size matches expected size (optional)
+expected_size=$(echo "$status_response" | grep -o '"file_size": [0-9]*' | awk '{print $2}')
+actual_size=$(stat -f%z "$download_folder/${fileName}.${extension}" 2&gt;/dev/null || stat --format=%s "$download_folder/${fileName}.${extension}")
+
+if [ -n "$expected_size" ] &amp;&amp; [ "$actual_size" -lt "$expected_size" ]; then
+    # Log error and retry download
+    echo "Download incomplete: $fileName.${extension} ($actual_size / $expected_size bytes)" &gt;&amp;2
+    curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
+         -o "$download_folder/${fileName}.${extension}" \
+         -u $username:$password \
+         $download_url
+fi
 
 # Increment index and check if there are more files to process
 next_index=$((current_index + 1))
@@ -1094,14 +1257,18 @@ printf '{"alfredworkflow": {"arg": "", "variables": {"code": "%s", "status": "%s
 				<key>script</key>
 				<string>#!/bin/bash
 
-# Initialize empty strings for UUIDs and filenames
-uuids=""
+# Split filepaths by tab and create an array
+IFS=$'\t' read -ra filePaths &lt;&lt;&lt; "$filePaths"
+
+# Initialize empty arrays for UUIDs and filenames
+uuids=()
+current_files=()
 
 [ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
 echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
 
 # Process each file passed as argument
-for file in "${filePaths}"; do
+for file in "${filePaths[@]}"; do
     theTitle=$(basename "${file%.*}")
     username="${username}"
     password="${password}" 
@@ -1117,10 +1284,10 @@ for file in "${filePaths}"; do
     # Extract UUID using grep and cut instead of jq
     uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
     
-	if [ ! -z "$uuid" ]; then
-    		uuids+=("$uuid")
-    		current_files+=("$theTitle")
-	fi
+    if [ ! -z "$uuid" ]; then
+        uuids+=("$uuid")
+        current_files+=("$theTitle")
+    fi
 done
 
 # Join arrays with space as delimiter
@@ -1602,6 +1769,72 @@ printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_ind
 			<string>D0D3C14E-E70D-497A-96BB-A48884E21277</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+username="${username}"
+password="${password}"
+download_folder="$HOME/Downloads"
+
+# Get the array and current index
+uuids_string="${uuids}"
+current_index="${current_index}"
+
+# Split the string into array using read
+read -r -a uuids_array &lt;&lt;&lt; "${uuids_string}"
+
+# Get current UUID being processed
+uuid="${uuids_array[$current_index]}"
+
+# Get file info and download
+status_response=$(curl -s https://auphonic.com/api/production/${uuid}.json -u $username:$password)
+fileName=$(echo "$status_response" | grep -o '"title": "[^"]*"' | cut -d'"' -f4)
+
+# URL encode the filename
+encoded_name=$(printf "%s" "$fileName" | perl -MURI::Escape -ne 'print uri_escape($_)')
+
+# Add counter to filename if it already exists
+base_filename="${fileName}"
+counter=1
+while [ -f "$download_folder/${fileName}.${extension}" ]; do
+    fileName="${base_filename}_${counter}"
+    ((counter++))
+done
+
+# Download the file
+download_url="https://auphonic.com/api/download/audio-result/${uuid}/${encoded_name}.${extension}"
+curl -s -o "$download_folder/${fileName}.${extension}" $download_url -u $username:$password
+
+# Increment index and check if there are more files to process
+next_index=$((current_index + 1))
+should_continue="false"
+if [ $next_index -lt ${#uuids_array[@]} ]; then
+    should_continue="true"
+fi
+
+# Output variables for next iteration
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "%s", "should_continue": "%s"}}}' "$uuids_string" "$next_index" "$should_continue"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2F1433BD-1E50-4D86-AB54-7016FB3E1DE0</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2110,6 +2343,17 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<key>ypos</key>
 			<real>65</real>
 		</dict>
+		<key>2F1433BD-1E50-4D86-AB54-7016FB3E1DE0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Download and Update Index | Sets loop or not ORIGINAL</string>
+			<key>xpos</key>
+			<real>1675</real>
+			<key>ypos</key>
+			<real>390</real>
+		</dict>
 		<key>306D6574-5645-44F6-8B74-1B83BE2A5D85</key>
 		<dict>
 			<key>xpos</key>
@@ -2190,6 +2434,17 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<real>460</real>
 			<key>ypos</key>
 			<real>490</real>
+		</dict>
+		<key>5D4E235C-3EBB-4888-911B-66B23254F2B3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Upload</string>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>67F668D6-8AA4-4721-AED5-38859AEB6D0F</key>
 		<dict>
@@ -2318,6 +2573,17 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<real>810</real>
 			<key>ypos</key>
 			<real>390</real>
+		</dict>
+		<key>BFFBAE8C-CE95-4610-9234-E89D4AA56E31</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Upload</string>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</key>
 		<dict>
