@@ -1050,23 +1050,58 @@ done
 # Modified download section with error handling and resume capability
 download_url="https://auphonic.com/api/download/audio-result/${uuid}/${encoded_name}.${extension}"
 
-# Use -L to follow redirects, -C - to resume downloads, and --retry for connection issues
-curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
-     -o "$download_folder/${fileName}.${extension}" \
-     -u $username:$password \
-     $download_url
+# Create a download function with progress display and better error handling
+download_file() {
+    local url="$1"
+    local output_file="$2"
+    local auth_user="$3"
+    local auth_pass="$4"
+    
+    echo "Starting download of $(basename "$output_file")..."
+    
+    # Add timeout settings, progress bar, and better retry logic
+    curl -L -C - --retry 5 --retry-delay 10 --retry-max-time 120 \
+         --connect-timeout 30 --max-time 3600 \
+         --progress-bar \
+         -o "$output_file" \
+         -u "$auth_user:$auth_pass" \
+         "$url"
+    
+    local curl_status=$?
+    if [ $curl_status -ne 0 ]; then
+        echo "Error downloading file: curl exit code $curl_status" &gt;&amp;2
+        return 1
+    fi
+    
+    # Verify file exists and has size
+    if [ ! -f "$output_file" ] || [ ! -s "$output_file" ]; then
+        echo "Download failed: Output file is missing or empty" &gt;&amp;2
+        return 1
+    fi
+    
+    return 0
+}
 
-# Verify file size matches expected size (optional)
-expected_size=$(echo "$status_response" | grep -o '"file_size": [0-9]*' | awk '{print $2}')
-actual_size=$(stat -f%z "$download_folder/${fileName}.${extension}" 2&gt;/dev/null || stat --format=%s "$download_folder/${fileName}.${extension}")
+# Call the download function with retry logic
+max_attempts=3
+attempt=1
+download_success=false
 
-if [ -n "$expected_size" ] &amp;&amp; [ "$actual_size" -lt "$expected_size" ]; then
-    # Log error and retry download
-    echo "Download incomplete: $fileName.${extension} ($actual_size / $expected_size bytes)" &gt;&amp;2
-    curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
-         -o "$download_folder/${fileName}.${extension}" \
-         -u $username:$password \
-         $download_url
+while [ $attempt -le $max_attempts ] &amp;&amp; [ "$download_success" = false ]; do
+    echo "Download attempt $attempt of $max_attempts"
+    
+    if download_file "$download_url" "$download_folder/${fileName}.${extension}" "$username" "$password"; then
+        download_success=true
+        echo "Download completed successfully!"
+    else
+        echo "Download attempt $attempt failed, waiting before retry..."
+        sleep $((attempt * 10))  # Increasing backoff time
+        ((attempt++))
+    fi
+done
+
+if [ "$download_success" = false ]; then
+    echo "Failed to download file after $max_attempts attempts" &gt;&amp;2
 fi
 
 # Increment index and check if there are more files to process
@@ -1274,7 +1309,7 @@ for file in "${filePaths[@]}"; do
     password="${password}" 
     preset="${preset}"
 
-    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
+    response=$(curl -L -s -X POST https://auphonic.com/api/simple/productions.json \
         -u $username:$password \
         -F "preset=$preset" \
         -F "title=$theTitle" \
@@ -1769,6 +1804,90 @@ printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_ind
 			<string>D0D3C14E-E70D-497A-96BB-A48884E21277</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+username="${username}"
+password="${password}"
+download_folder="$HOME/Downloads"
+
+# Get the array and current index
+uuids_string="${uuids}"
+current_index="${current_index}"
+
+# Split the string into array using read
+read -r -a uuids_array &lt;&lt;&lt; "${uuids_string}"
+
+# Get current UUID being processed
+uuid="${uuids_array[$current_index]}"
+
+# Get file info and download
+status_response=$(curl -s https://auphonic.com/api/production/${uuid}.json -u $username:$password)
+fileName=$(echo "$status_response" | grep -o '"title": "[^"]*"' | cut -d'"' -f4)
+
+# URL encode the filename
+encoded_name=$(printf "%s" "$fileName" | perl -MURI::Escape -ne 'print uri_escape($_)')
+
+# Add counter to filename if it already exists
+base_filename="${fileName}"
+counter=1
+while [ -f "$download_folder/${fileName}.${extension}" ]; do
+    fileName="${base_filename}_${counter}"
+    ((counter++))
+done
+
+# Modified download section with error handling and resume capability
+download_url="https://auphonic.com/api/download/audio-result/${uuid}/${encoded_name}.${extension}"
+
+# Use -L to follow redirects, -C - to resume downloads, and --retry for connection issues
+curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
+     -o "$download_folder/${fileName}.${extension}" \
+     -u $username:$password \
+     $download_url
+
+# Verify file size matches expected size (optional)
+expected_size=$(echo "$status_response" | grep -o '"file_size": [0-9]*' | awk '{print $2}')
+actual_size=$(stat -f%z "$download_folder/${fileName}.${extension}" 2&gt;/dev/null || stat --format=%s "$download_folder/${fileName}.${extension}")
+
+if [ -n "$expected_size" ] &amp;&amp; [ "$actual_size" -lt "$expected_size" ]; then
+    # Log error and retry download
+    echo "Download incomplete: $fileName.${extension} ($actual_size / $expected_size bytes)" &gt;&amp;2
+    curl -L -C - --retry 3 --retry-delay 5 --retry-max-time 60 \
+         -o "$download_folder/${fileName}.${extension}" \
+         -u $username:$password \
+         $download_url
+fi
+
+# Increment index and check if there are more files to process
+next_index=$((current_index + 1))
+should_continue="false"
+if [ $next_index -lt ${#uuids_array[@]} ]; then
+    should_continue="true"
+fi
+
+# Output variables for next iteration
+printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "%s", "should_continue": "%s"}}}' "$uuids_string" "$next_index" "$should_continue"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CD641D2B-D9A8-4401-995A-E4E347236D4F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2600,6 +2719,17 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<real>805</real>
 			<key>ypos</key>
 			<real>75</real>
+		</dict>
+		<key>CD641D2B-D9A8-4401-995A-E4E347236D4F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Download and Update Index | Sets loop or not |NEXT</string>
+			<key>xpos</key>
+			<real>1825</real>
+			<key>ypos</key>
+			<real>380</real>
 		</dict>
 		<key>CF00DDAF-2D15-41D4-A90C-27E658066B6C</key>
 		<dict>
