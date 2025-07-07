@@ -661,151 +661,6 @@ rm -f "$alfred_workflow_cache/currentIndex.txt"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-# Initialize empty strings for UUIDs and filenames
-uuids=""
-
-[ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
-echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
-
-# Process each file passed as argument
-for file in "${filePaths}"; do
-    theTitle=$(basename "${file%.*}")
-    username="${username}"
-    password="${password}" 
-    preset="${preset}"
-
-    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
-        -u $username:$password \
-        -F "preset=$preset" \
-        -F "title=$theTitle" \
-        -F "input_file=@$file" \
-        -F "action=start")
-
-    # Extract UUID using grep and cut instead of jq
-    uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
-    
-	if [ ! -z "$uuid" ]; then
-    		uuids+=("$uuid")
-    		current_files+=("$theTitle")
-	fi
-done
-
-# Join arrays with space as delimiter
-uuids_string="${uuids[*]}"
-files_string="${current_files[*]}"
-
-# Output the variables
-printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "0", "allFiles": "%s"}}}' "$uuids_string" "$files_string"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BFFBAE8C-CE95-4610-9234-E89D4AA56E31</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-# Create debug log file
-debug_log="$HOME/Desktop/auphonic_debug.txt"
-echo "=== Auphonic Debug Log $(date) ===" &gt; "$debug_log"
-
-# Initialize empty arrays for UUIDs and filenames
-uuids=()
-current_files=()
-
-[ ! -d "$alfred_workflow_cache" ] &amp;&amp; mkdir -p "$alfred_workflow_cache"
-echo "Number of files: ${#filePaths[@]}" &gt;&gt; "$debug_log"
-echo -n "${#filePaths[@]}" &gt; "$alfred_workflow_cache/totalItems.txt"
-
-# Process each file passed as argument
-for file in "${filePaths[@]}"; do
-    echo "Processing file: $file" &gt;&gt; "$debug_log"
-    
-    theTitle=$(basename "${file%.*}")
-    echo "Title: $theTitle" &gt;&gt; "$debug_log"
-    
-    username="${username}"
-    password="${password}" 
-    preset="${preset}"
-    
-    echo "Sending request to Auphonic API..." &gt;&gt; "$debug_log"
-    
-    response=$(curl -s -X POST https://auphonic.com/api/simple/productions.json \
-        -u $username:$password \
-        -F "preset=$preset" \
-        -F "title=$theTitle" \
-        -F "input_file=@$file" \
-        -F "action=start")
-    
-    echo "Response received: ${response:0:100}..." &gt;&gt; "$debug_log"
-
-    # Extract UUID using grep and cut instead of jq
-    uuid=$(echo "$response" | grep -o '"uuid": "[^"]*"' | cut -d'"' -f4)
-    echo "Extracted UUID: $uuid" &gt;&gt; "$debug_log"
-    
-    if [ ! -z "$uuid" ]; then
-        uuids+=("$uuid")
-        current_files+=("$theTitle")
-        echo "Added UUID and filename to arrays" &gt;&gt; "$debug_log"
-    else
-        echo "WARNING: Failed to extract UUID" &gt;&gt; "$debug_log"
-    fi
-done
-
-# Debug array contents
-echo "uuids array: ${uuids[@]}" &gt;&gt; "$debug_log"
-echo "current_files array: ${current_files[@]}" &gt;&gt; "$debug_log"
-
-# Join arrays with space as delimiter
-uuids_string="${uuids[*]}"
-files_string="${current_files[*]}"
-
-echo "uuids_string: $uuids_string" &gt;&gt; "$debug_log"
-echo "files_string: $files_string" &gt;&gt; "$debug_log"
-
-# Output the variables
-output=$(printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_index": "0", "allFiles": "%s"}}}' "$uuids_string" "$files_string")
-echo "Final output: $output" &gt;&gt; "$debug_log"
-echo "$output"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5D4E235C-3EBB-4888-911B-66B23254F2B3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1679,6 +1534,8 @@ printf '{"alfredworkflow": {"arg": "", "variables": {"uuids": "%s", "current_ind
 				<true/>
 				<key>variables</key>
 				<dict>
+					<key>extension</key>
+					<string>m4a</string>
 					<key>preset</key>
 					<string>{var:presetA}</string>
 				</dict>
@@ -2554,17 +2411,6 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<key>ypos</key>
 			<real>490</real>
 		</dict>
-		<key>5D4E235C-3EBB-4888-911B-66B23254F2B3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Upload</string>
-			<key>xpos</key>
-			<real>330</real>
-			<key>ypos</key>
-			<real>55</real>
-		</dict>
 		<key>67F668D6-8AA4-4721-AED5-38859AEB6D0F</key>
 		<dict>
 			<key>xpos</key>
@@ -2692,17 +2538,6 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<real>810</real>
 			<key>ypos</key>
 			<real>390</real>
-		</dict>
-		<key>BFFBAE8C-CE95-4610-9234-E89D4AA56E31</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Upload</string>
-			<key>xpos</key>
-			<real>535</real>
-			<key>ypos</key>
-			<real>55</real>
 		</dict>
 		<key>C500BF05-4D6C-47F3-A224-1F0489FCE2C3</key>
 		<dict>
@@ -3042,8 +2877,6 @@ Please make sure that your chosen preset includes the file type that you intend 
 			<string>presetC</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
